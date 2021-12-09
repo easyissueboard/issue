@@ -9,6 +9,10 @@ plugins {
     kotlin("plugin.spring") version "1.6.0"
 }
 
+dependencies {
+    implementation(project(":adapter"))
+}
+
 allprojects {
     apply(plugin = "kotlin")
     apply(plugin = "org.jetbrains.kotlin.plugin.spring")
